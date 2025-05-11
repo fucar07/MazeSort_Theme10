@@ -54,12 +54,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.CompareX,
 		C3.Plugins.Sprite.Exps.Y,
 		C3.Plugins.Sprite.Exps.X,
-		C3.Plugins.Sprite.Cnds.OnCreated,
-		C3.Plugins.Sprite.Cnds.IsOverlapping,
-		C3.Plugins.System.Cnds.CompareVar,
-		C3.Plugins.System.Acts.SubVar,
 		C3.Plugins.System.Cnds.Every,
 		C3.Behaviors.EightDir.Cnds.IsMoving,
+		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.Keyboard.Cnds.IsKeyDown,
 		C3.Behaviors.EightDir.Acts.SimulateControl,
 		C3.Plugins.Sprite.Acts.SetMirrored,
@@ -75,8 +72,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Flash.Acts.Flash,
 		C3.Plugins.Arr.Acts.Push,
 		C3.Plugins.Arr.Exps.Back,
+		C3.Plugins.System.Acts.SubVar,
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.Arr.Exps.Width,
+		C3.Plugins.Sprite.Cnds.OnCreated,
 		C3.Plugins.System.Cnds.While,
 		C3.Plugins.Arr.Cnds.CompareSize,
 		C3.Plugins.Arr.Exps.IndexOf,
@@ -88,7 +87,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Behaviors.EightDir.Acts.SetVectorX,
 		C3.Behaviors.EightDir.Acts.SetVectorY,
-		C3.Behaviors.EightDir.Acts.SetSpeed
+		C3.Behaviors.EightDir.Acts.SetSpeed,
+		C3.Plugins.Sprite.Cnds.IsOverlapping,
+		C3.Plugins.System.Cnds.PickAll
 	];
 };
 self.C3_JsPropNameTable = [
