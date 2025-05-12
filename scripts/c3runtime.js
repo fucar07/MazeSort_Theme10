@@ -1310,7 +1310,6 @@ self.C3_ExpressionFuncs = [
 			const v1 = p._GetNode(1).GetVar();
 			return () => (f0(0, v1.GetValue()) * 64);
 		},
-		() => "SabitDur",
 		() => 2,
 		() => "Maze",
 		() => "x",
@@ -1333,6 +1332,11 @@ self.C3_ExpressionFuncs = [
 			return () => (64 * v0.GetValue());
 		},
 		() => "Bottom",
+		() => 832,
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject();
+		},
 		() => "y",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
@@ -1343,6 +1347,7 @@ self.C3_ExpressionFuncs = [
 			return () => (f0("y") * 64);
 		},
 		() => "Right",
+		() => 1600,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() - 2);
@@ -1378,14 +1383,11 @@ self.C3_ExpressionFuncs = [
 		},
 		() => 768,
 		() => 1536,
-		p => {
-			const n0 = p._GetNode(0);
-			return () => n0.ExpObject();
-		},
 		() => "Character",
 		() => 10,
 		() => "SagaSolaYuru",
 		() => "OneYuru",
+		() => "SabitDur",
 		() => "Category Door",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -1405,6 +1407,10 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpObject() - 64);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => (n0.ExpObject() + 64);
 		},
 		() => "Thing",
 		() => 18,
