@@ -1399,6 +1399,7 @@ self.C3_ExpressionFuncs = [
 			const v2 = p._GetNode(2).GetVar();
 			return () => f0(v1.GetValue(), v2.GetValue(), ",");
 		},
+		() => -10,
 		() => "food",
 		() => 0.2,
 		() => "animal",
